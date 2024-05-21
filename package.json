@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.bundle.json",
     "test": "jest --verbose",
-    "publish-main": "lerna publish --yes"
+    "publish-main": "lerna publish  --conventional-commits --loglevel verbose --yes"
   },
   "license": "LICENSE",
   "author": "Nicholas Panella",
