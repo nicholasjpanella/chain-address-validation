@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.0.6...chain-address-validation@0.1.0) (2024-05-21)
+
+
+### Features
+
+* bitcoin ([34297e0](https://github.com/nicholasjpanella/chain-address-validation/commit/34297e0d5211e2244a4e1f7c6ad041982c64768c))
+* lerna f'd up ([b2207c9](https://github.com/nicholasjpanella/chain-address-validation/commit/b2207c95c542d502194e74e44663bfcdaadb82f1))
+* x ([8182a2d](https://github.com/nicholasjpanella/chain-address-validation/commit/8182a2d38242d6a2d08746c4fd213c0c01976e98))
+
+
+
+
+
 ## 0.0.6 (2024-05-21)
 
 **Note:** Version bump only for package chain-address-validation
