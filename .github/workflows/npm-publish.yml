@@ -12,9 +12,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 19
-      - run: echo "skip for now"
-      # - run: npm ci
-      # - run: npm test
+      - run: npm ci
+      - run: npm test
 
   publish-npm:
     needs: test
@@ -34,6 +33,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build
-      - run: npm run publish-main # -- --force-git-tag --no-push
+      - run: npm run publish-main
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

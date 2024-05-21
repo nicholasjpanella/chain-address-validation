@@ -4,9 +4,9 @@
     "outDir": "dist",
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "Node10",
+    "moduleResolution": "Bundler",
     "lib": ["esnext"],
-    "types": ["@types/jest"],
+    "types": ["node", "@types/jest"],
     "noEmit": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,5 +16,9 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true
   },
-  "include": ["src", "test"]
+  "include": ["src", "test"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
 }
