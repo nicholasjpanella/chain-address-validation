@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.1.0...chain-address-validation@0.2.0) (2024-05-22)
+
+
+### Features
+
+* bitcoin-cash ([c924cfb](https://github.com/nicholasjpanella/chain-address-validation/commit/c924cfb1917b69cf8893f4a63fcb2576a7c4e07f))
+* initialize all planned supported chains (all return truthy) ([4ba8814](https://github.com/nicholasjpanella/chain-address-validation/commit/4ba88147600650b4c8c5eb9dea226dcb40d00abb))
+
+
+
+
+
 # [0.1.0](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.0.6...chain-address-validation@0.1.0) (2024-05-21)
 
 
