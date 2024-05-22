@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.2.0...chain-address-validation@0.2.1) (2024-05-22)
+
+
+### Bug Fixes
+
+* readme update ([c1762b7](https://github.com/nicholasjpanella/chain-address-validation/commit/c1762b74752b9919ca21a7354a26a5a20193d02b))
+
+
+
+
+
 # [0.2.0](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.1.0...chain-address-validation@0.2.0) (2024-05-22)
 
 
