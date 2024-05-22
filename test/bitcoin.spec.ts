@@ -37,13 +37,13 @@ describe("Bitcoin Mainnet Address Validation", () => {
   ];
 
   test.each(validAddresses)("should match valid address: %s", (address) => {
-    expect(validateBitcoinAddress(address)).toBe(true);
+    expect(validateBitcoinAddress(address, "mainnet")).toBe(true);
   });
 
   test.each(invalidAddresses)(
     "should not match invalid address: %s",
     (address) => {
-      expect(validateBitcoinAddress(address)).toBe(false);
+      expect(validateBitcoinAddress(address, "mainnet")).toBe(false);
     }
   );
 });

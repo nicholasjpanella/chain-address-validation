@@ -3,7 +3,7 @@ import { bitcoinCashValidations } from "./chains/bitcoin-cash";
 
 const ALL_VALIDATIONS = [...bitcoinValidations, ...bitcoinCashValidations];
 
-export function validateAddressAgnostic(address: string) {
+export function validateAddress(address: string) {
   return ALL_VALIDATIONS.some((validation) => validation.test(address));
 }
 

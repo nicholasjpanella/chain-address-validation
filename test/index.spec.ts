@@ -1,4 +1,4 @@
-import { validateAddressAgnostic } from "../src";
+import { validateAddress } from "../src";
 
 describe("Chain Agnostic Address Validation", () => {
   test.each([
@@ -11,7 +11,7 @@ describe("Chain Agnostic Address Validation", () => {
     ["bitcoincash:qr95sy3j9xwd2ap32xkykttr4cvcu7as4y0qverfuy"],
     ["bchtest:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a"],
   ])("VALID: %s", (address) => {
-    expect(validateAddressAgnostic(address)).toBeTruthy();
+    expect(validateAddress(address)).toBeTruthy();
   });
   test.each([
     ["bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt08!"],
@@ -23,6 +23,6 @@ describe("Chain Agnostic Address Validation", () => {
     ["bcetest:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a"],
     ["pzkst4xhr5gamvgpzvyh44x80275rmglyvpzgln0"],
   ])("INVALID : %s", (address) => {
-    expect(validateAddressAgnostic(address)).toBeFalsy();
+    expect(validateAddress(address)).toBeFalsy();
   });
 });

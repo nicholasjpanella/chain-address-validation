@@ -13,8 +13,11 @@ export const bitcoinCashValidations = [
 
 export function validateBitcoinCashAddress(
   address: string,
-  networkType: NetworkType = "mainnet"
+  networkType: NetworkType = "*"
 ) {
-  if (!String(address.trim()).length) return false;
+  if (typeof address !== "string") return false;
+  if (!String(address).length) return false;
+  if (networkType === "*")
+    return bitcoinCashValidations.some((regex) => regex.test(address));
   return regexByType[networkType].test(address.trim());
 }

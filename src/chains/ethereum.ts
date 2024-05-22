@@ -5,15 +5,15 @@ const regexByType = {
   testnet: /^(.*)$/,
 };
 
-export const dogeValidations = [regexByType.mainnet, regexByType.testnet];
+export const ethereumValidations = [regexByType.mainnet, regexByType.testnet];
 
-export function validateDogeAddress(
+export function validateEthereumAddress(
   address: string,
   networkType: NetworkType = "*"
 ) {
   if (typeof address !== "string") return false;
   if (!String(address).length) return false;
   if (networkType === "*")
-    return dogeValidations.some((regex) => regex.test(address));
+    return ethereumValidations.some((regex) => regex.test(address));
   return regexByType[networkType].test(address);
 }
