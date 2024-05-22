@@ -1,6 +1,6 @@
 import { validateBitcoinAddress } from "../src";
 
-describe("Bitcoin Mainnet Address Regex", () => {
+describe("Bitcoin Mainnet Address Validation", () => {
   const validAddresses = [
     // P2PKH
     "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
@@ -48,7 +48,7 @@ describe("Bitcoin Mainnet Address Regex", () => {
   );
 });
 
-describe("Bitcoin Testnet Address Regex", () => {
+describe("Bitcoin Testnet Address Validation", () => {
   const validAddresses = [
     // P2PKH
     "mipcBbFg9gMiCh81Kj8tqqdgoZub1ZJRfn",

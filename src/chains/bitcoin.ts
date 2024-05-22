@@ -1,4 +1,4 @@
-import { NetworkType } from "src/types";
+import { NetworkType } from "../types";
 
 const regexByType = {
   mainnet:
