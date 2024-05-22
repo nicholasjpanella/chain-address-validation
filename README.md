@@ -1,3 +1,8 @@
+[![Npm package version](https://badgen.net/npm/v/chain-address-validation)](https://npmjs.com/package/chain-address-validation)
+[![Test Build & Publish](https://github.com/nicholasjpanella/chain-address-validation/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/nicholasjpanella/chain-address-validation/actions/workflows/npm-publish.yml)
+[![GitHub latest commit](https://badgen.net/github/last-commit/nicholasjpanella/chain-address-validation)](https://GitHub.com/nicholasjpanella/chain-address-validation/commit/)
+[![Npm package yearly downloads](https://badgen.net/npm/dy/chain-address-validation)](https://npmjs.com/package/chain-address-validation)
+
 # chain-address-validation
 
 A TypeScript library for validating various cryptocurrency addresses.
