@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.2.1...chain-address-validation@0.3.0) (2024-05-23)
+
+
+### Features
+
+* ethereum / evm compatible ([e96a187](https://github.com/nicholasjpanella/chain-address-validation/commit/e96a187837a927f15dfb73447c9ce16619aa47ea))
+
+
+
+
+
 ## [0.2.1](https://github.com/nicholasjpanella/chain-address-validation/compare/chain-address-validation@0.2.0...chain-address-validation@0.2.1) (2024-05-22)
 
 
