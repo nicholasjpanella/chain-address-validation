@@ -1,19 +1,28 @@
+import { isAddress } from "@ethersproject/address";
 import { NetworkType } from "../types";
 
-const regexByType = {
-  mainnet: /^(.*)$/,
-  testnet: /^(.*)$/,
-};
-
-export const ethereumValidations = [regexByType.mainnet, regexByType.testnet];
-
+/**
+ * Validates if a given string is a correct EVM address.
+ * @param address - The address string to validate.
+ * @param networkType - ignored for this function.
+ * @returns true if the address is valid and or correctly checksummed, false otherwise.
+ */
 export function validateEthereumAddress(
   address: string,
   networkType: NetworkType = "*"
-) {
+): boolean {
   if (typeof address !== "string") return false;
   if (!String(address).length) return false;
-  if (networkType === "*")
-    return ethereumValidations.some((regex) => regex.test(address));
-  return regexByType[networkType].test(address);
+  if (!address.startsWith("0x")) return false;
+  networkType;
+
+  return isAddress(address);
 }
+
+export const etheriumValidations = [
+  {
+    test(address) {
+      return validateEthereumAddress(address);
+    },
+  } as RegExp,
+];
