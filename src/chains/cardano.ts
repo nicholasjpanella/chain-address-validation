@@ -1,8 +1,8 @@
 import { NetworkType } from "../types";
 
 const regexByType = {
-  mainnet: /^(.*)$/,
-  testnet: /^(.*)$/,
+  mainnet: /^(addr1)[0-9a-zA-Z]{58,66}$/,
+  testnet: /^(addr_test1)[0-9a-zA-Z]{58,66}$/,
 };
 
 export const cardanoValidations = [regexByType.mainnet, regexByType.testnet];
